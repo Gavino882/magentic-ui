@@ -104,6 +104,14 @@ Once all steps are completed, the Orchestrator generates a final answer that is 
 
 All intermediate progress steps are clearly displayed to the user. Furthermore, the user can pause the execution of the plan and send additional requests or feedback. The user can also configure through the interface whether agent actions (e.g., clicking a button) require approval.
 
+## Code Architecture
+
+To get a visual overview of the Magentic-UI codebase, including core modules, their functionalities, and their interconnections, please see our interactive architecture diagram:
+
+[View Interactive Code Architecture Diagram](./docs/architecture.html)
+
+This diagram provides a clickable and draggable representation of the system's components.
+
 ## How to Use Magentic-UI
 
 
