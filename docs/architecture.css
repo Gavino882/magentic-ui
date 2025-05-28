@@ -1,24 +1,40 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nicer font */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f8f9fa; /* Lighter background */
+    color: #212529; /* Darker text for better contrast */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+h1, h3 {
+    color: #007bff; /* Bootstrap primary blue for headings */
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 500; /* Slightly lighter font weight for a modern look */
 }
 
 h1 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 2.2em; /* Larger font for main title */
+}
+
+h3 {
+    font-size: 1.6em; /* Slightly smaller for legend title */
+    margin-top: 20px; /* More space above legend title */
+    margin-bottom: 10px;
 }
 
 #cy-container {
-    width: 90%;
-    height: 70vh; /* Viewport height */
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    width: 85%; /* Slightly reduced width */
+    max-width: 1200px; /* Max width for very large screens */
+    height: 65vh; /* Reduced height to make space for legend */
+    margin: 10px auto; /* Adjusted margin */
+    border: 1px solid #dee2e6; /* Lighter border */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Softer shadow */
     background-color: #fff;
 }
 
@@ -28,7 +44,42 @@ h1 {
     display: block;
 }
 
-/* Tooltip style (optional, if you plan to add tooltips via JS) */
+#legend-container {
+    width: 85%; /* Match cy-container width */
+    max-width: 1200px; /* Match cy-container max-width */
+    margin: 20px auto; /* Space above and below legend */
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#legend-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for legend items */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items */
+}
+
+#legend-items li {
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+#legend-items li .legend-color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+/* Tooltip style - already present, kept for consistency */
 .cy-tooltip {
     position: absolute;
     background-color: black;

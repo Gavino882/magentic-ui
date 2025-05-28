@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magentic-UI Code Architecture</title>
     <link rel="stylesheet" href="architecture.css">
-    <!-- Include Cytoscape.js -->
+    
+    <!-- Cytoscape.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+    
+    <!-- Tippy.js -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
 </head>
 <body>
     <h1>Magentic-UI Code Architecture</h1>
@@ -14,5 +21,12 @@
         <div id="cy"></div>
     </div>
     <script src="architecture.js"></script>
+
+    <div id="legend-container">
+        <h3>Legend</h3>
+        <ul id="legend-items">
+            <!-- Legend items will be populated by JavaScript -->
+        </ul>
+    </div>
 </body>
 </html>
